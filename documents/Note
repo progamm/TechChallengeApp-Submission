@@ -1,0 +1,13 @@
+•	For the Solution have created an Ec2 Instance which with an Autoscaling group with required security groups.
+•	The instance also is backed up by the PostgreSQL database.
+•	We have created the automated deployment using Code pipeline.
+•	We have used the Terraform as the platform needed for Infra as Code.
+
+•	We have cloned the Git and have connected it to the Code Build using the token.
+
+•	The code build performs the build using the Git as the source repository.
+
+•	Once the build is done it moves on to the Code pipeline and fetches the code from the code repository and performs the steps.
+•	Next, we have made some changes in the repository and the code pipeline detects the changes once we commit the git changes and performs the whole deployment process and the changes are reflected with the logs being deployed to the s3 bucket.
+
+•	Whenever the changes are being done the deployment process starts and lodges the changes in the s3 bucket.
